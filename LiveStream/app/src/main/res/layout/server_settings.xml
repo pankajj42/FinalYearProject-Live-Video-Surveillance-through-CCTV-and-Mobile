@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/server_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg"
+        android:padding="14dp" >
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/indicationUri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:paddingRight="10dp"
+                    android:text="Center Name : "
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/uri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_margin="0dp"
+                    android:inputType="textUri"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    >
+                </EditText>
+            </TableRow>
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

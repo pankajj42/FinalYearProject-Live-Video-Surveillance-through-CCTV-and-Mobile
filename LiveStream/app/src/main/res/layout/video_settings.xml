@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@drawable/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:buttonTint="@android:color/white"
+                android:text="176x144, 30 fps, 250 Kbps" />
+
+            <RadioButton
+                android:id="@+id/radio6"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:buttonTint="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="320x240, 30 fps, 250 Kbps" />
+
+            <RadioButton
+                android:id="@+id/radio27"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/white"
+                android:text="352x288, 30 fps, 50 Kbps" />
+            <RadioButton
+                android:id="@+id/radio37"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:buttonTint="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="352x288, 30 fps, 100 Kbps" />
+            <RadioButton
+                android:id="@+id/radio47"
+                android:textColor="@android:color/white"
+                android:buttonTint="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="352x288, 30 fps, 600 Kbps" />
+
+            <RadioButton
+                android:id="@+id/radio9"
+                android:textColor="@android:color/white"
+                android:buttonTint="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="640x480, 30 fps, 600 Kbps" />
+
+            <RadioButton
+                android:id="@+id/radio10"
+                android:textColor="@android:color/white"
+                android:buttonTint="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="704x576, 30 fps, 600 Kbps" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/save"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="save" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
